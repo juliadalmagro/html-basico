@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <link href="https://fonts.cdnfonts.com/css/coca-cola-ii" rel="stylesheet">
+                
 </head>
-<body>
+<body id="topo">
     <table>
         <tr>
             <td rowspan="3">Legenda</td>
@@ -24,7 +26,9 @@
             </td>
         </tr>
     </table>
+    
     <br>
+    
     <table>
         <tr>
             <th>
@@ -45,82 +49,105 @@
             </td>
         </tr>
     </table>
+    
     <br>
 
-    <table>
-        <tr>
-            <td>
-                Nome
-            </td>
-            <td>
-                Preço
-            </td>
-            <td>
-                Imagem
-            </td>
-            <td>
-                Total
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Coca-Cola
-            </td>
-            <td>
-                R$ 5,00
-            </td>
-            <td>
-                <img src="images/CocaCola.jpeg" alt="">
-            </td>
-            <td rowspan="4">
-                R$ 29,00
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Suco Prats
-            </td>
-            <td>
-                R$ 7,00
-            </td>
-            <td>
-                <img src="images/Untitled.jpeg" alt="">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Doritos
-            </td>
-            <td>
-                R$ 10,00
-            </td>
-            <td>
-                <img src="images/Doritos.jpeg" alt="">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Bala fini
-            </td>
-            <td>
-                R$ 7,00
-            </td>
-            <td>
-                <img src="images/Fini.jpeg" alt="">
-            </td>
-        </tr>
-    </table>
+    <div class="fonte" >
+        <table>
+            <tr>
+                <td class="titulo-tabela">
+                    Nome
+                </td>
+                <td class="titulo-tabela">
+                    Preço
+                </td>
+                <td class="titulo-tabela">
+                    Imagem
+                </td>
+                <td class="titulo-tabela">
+                    Total
+                </td>
+            </tr>
+            <tr>
+                <td class="fonte-coca">
+                    Coca-Cola
+                </td>
+                <td>
+                    R$ 5,00
+                </td>
+                <td>
+                    <img src="images/CocaCola.jpeg" alt="">
+                </td>
+                <td rowspan="4">
+                    R$ 29,00
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Suco Prats
+                </td>
+                <td>
+                    R$ 7,00
+                </td>
+                <td>
+                    <img src="images/Untitled.jpeg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Doritos
+                </td>
+                <td>
+                    R$ 10,00
+                </td>
+                <td>
+                    <img src="images/Doritos.jpeg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bala fini
+                </td>
+                <td>
+                    R$ 7,00
+                </td>
+                <td>
+                    <img src="images/Fini.jpeg" alt="">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    
+    <a href="#topo">voltar ao topo</a>
 </body>
 </html>
 
 <style>
-    table {
-        border: 1px solid black;;
-    }
-    tr{
+    table, tr, td {
         border: 1px solid black;
+        border-radius: 6px;
+        border-color: grey;
     }
-    td {
-        border: 1px solid black;
+    div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .fonte{
+        font-family: monospace;
+        text-align: center;
+    }
+    .titulo-tabela{
+        font-weight: bolder;
+        text-align: center;
+        background-color: rgba(90, 120, 20, 0.3);
+    }
+    .fonte-coca{
+        font-family: 'Coca cola ii';
+        text-align: center;
+        font-size: larger;
     }
 </style>
+

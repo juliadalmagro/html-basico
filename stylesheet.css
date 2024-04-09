@@ -1,0 +1,28 @@
+span {
+    color: maroon; 
+    font-weight: bolder; 
+    font-family: cursive;
+}   
+
+div{
+    background-color: burlywood;
+    text-align: center;
+
+}
+/* internal tem preferencia sobre external */
+p{
+    color:aquamarine ;
+}
+
+.formatacao-oi{
+    color: maroon       ;
+}
+
+.fonte-cursive{
+    font-family: cursive    ;
+}
+
+.center{
+    margin: 0 auto;
+    width: 5%;
+}
